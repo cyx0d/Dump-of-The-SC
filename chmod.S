@@ -16,4 +16,4 @@ _start:
 	pushq %rsp	# create pointer for 5a
 	popq %rdi	# set filename to 5a pointer
 	popq %rax	# set call number
-	syscall		# call chmod -> chmod('Z', rsi)
+	syscall	     # call chmod -> chmod('Z', rsi)
